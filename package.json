@@ -1,0 +1,23 @@
+{
+  "name": "css-redundance",
+  "version": "0.0.1",
+  "description": "A library to find redundant CSS",
+  "keywords": [
+    "CSS",
+    "redundant",
+    "redundance",
+    "library"
+  ],
+  "repository": "git://github.com/QQEDU/css-redundance.git",
+  "author": "Daniel Yang <miniflycn@gmail.com>",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "url-valid": "*",
+    "url-dom": "*",
+    "css-parse": "*"
+  },
+  "license": "MIT"
+}
