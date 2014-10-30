@@ -1,6 +1,6 @@
 {
-  "name": "css-redundance",
-  "version": "0.0.1",
+  "name": "tidycss",
+  "version": "0.2.1",
   "description": "A library to find redundant CSS",
   "keywords": [
     "CSS",
@@ -8,7 +8,7 @@
     "redundance",
     "library"
   ],
-  "repository": "git://github.com/QQEDU/css-redundance.git",
+  "repository": "git://github.com/QQEDU/tidycss.git",
   "author": "Daniel Yang <miniflycn@gmail.com>",
   "main": "index",
   "engines": {
@@ -17,7 +17,7 @@
   "dependencies": {
     "url-valid": "*",
     "url-dom": "*",
-    "css-parse": "*"
+    "css-parse": "1.7.0"
   },
   "license": "MIT"
 }
