@@ -43,11 +43,9 @@ tidy(
 		unchecks: ['.mod-nav__course-all span:hover']
 	}
 );
-
+```
 
 * 运行则可见到相关报表，用于代码reveiw。
-
-```
 
 ## License
 (The MIT License)
