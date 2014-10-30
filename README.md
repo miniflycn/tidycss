@@ -1,4 +1,4 @@
-css-redundance
+tidycss
 ==============
 
 > 一个快速分析CSS冗余的工具。
@@ -18,6 +18,36 @@ css-redundance
 由此降低了我们对CSS分析以及生成的难度。[cheerio](https://github.com/cheeriojs/cheerio) 为我们提供了服务器端高速jQuery实现，简化了对DOM的选择器查询。而PhantomJS则提供了获取特定状态下页面所有DOM节点的方法。
 
 简单的说，我们获取所有CSS的选择器，然后在DOM中进行逐一选取，对没有取到任何节点的选择器进行标记，最后在生成相应报表。
+
+使用
+----
+
+* 安装：
+
+> $ npm install tidycss
+
+* 写一个例子：
+
+```javascript
+var tidy = require('tidycss');
+
+tidy(
+	// 你要检测冗余的url
+	'http://ke.qq.com',
+	// 可选参数
+	{
+		// 不对common.xxxx.css检测冗余，因为这个是站点公共文件
+		ignore: /common\..*\.css/,
+		// 忽略的选择器列表, 即这里的选择器是被review后可冗余项，
+		// 比如有通过javascript动态生成的DOM树
+		unchecks: ['.mod-nav__course-all span:hover']
+	}
+);
+
+
+* 运行则可见到相关报表，用于代码reveiw。
+
+```
 
 ## License
 (The MIT License)
