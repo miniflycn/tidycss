@@ -22,6 +22,12 @@ tidycss
 使用
 ----
 
+* 安装 phantomjs 到环境变量
+
+安装 PhantomJS，并使得运行下面命令有反应：
+
+> $ phantomjs
+
 * 安装：
 
 > $ npm install tidycss

@@ -1,4 +1,4 @@
-var tidy = require('tidycss');
+var tidy = require('../');
 
 tidy('http://ke.qq.com', {
     ignore: /common\..*?\.css/,
